@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
+
+* {
+    font-family: 'Turret Road', cursive;
+}
+
+/* General styles */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 2px 2px #800080;
+}
+
+/* Background image */
+body {
+    background-image: url("../images/university-of-manchester.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 4px 4px #800080;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+    color: #fff;
+    text-shadow: 2px 2px #800080;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0px;
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 2px 2px #800080;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px #800080;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 3px solid #ccc;
+}
+
+/* Login and create account styles */
+.container {
+    max-width: 600px;
+    /* sets a maximum width for the container */
+    margin: 0 auto;
+    /* centers the container horizontally */
+    display: flex;
+    /* sets the container to use a flexbox layout */
+    flex-direction: column;
+    /* stacks the child elements vertically */
+    align-items: center;
+    /* centers the child elements horizontally */
+    flex-grow: 1;
+    height: 100%;
+}
+
+.container.centred {
+    justify-content: center;
+    /* centers the child elements vertically */
+}
+
+.buttons {
+    display: flex;
+    /* sets the buttons to use a flexbox layout */
+    gap: 10px;
+    /* adds some spacing between the buttons */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 160px;
+    height: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    /* adds padding to the buttons */
+    border-radius: 10px;
+    /* adds some rounding to the button corners */
+    background-color: #64009F;
+    /* sets the button background color */
+    color: #fff;
+    /* sets the button text color */
+    font-size: 18px;
+    /* sets the button font size */
+    cursor: pointer;
+    /* sets the cursor to indicate that the buttons are clickable */
+    width: 180px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #9023D0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.large-button {
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #ccc;;
+}
+
+.centred-form {
+    max-width: 400px;
+    /* sets a maximum width for the form */
+    margin: 0 auto;
+    /* centers the form horizontally */
+    display: flex;
+    /* sets the form to use a flexbox layout */
+    flex-direction: column;
+    /* stacks the child elements vertically */
+    align-items: center;
+    /* centers the child elements horizontally */
+    justify-content: center;
+    /* centers the child elements vertically */
+}
+
+.centred-form label {
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.styled-form {
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2),
+    0 0 40px rgba(0, 0, 0, 0.1),
+    0 0 60px rgba(0, 0, 0, 0.1),
+    0 0 80px rgba(0, 0, 0, 0.1);
+    border: 2px solid #800080;
+    background-color: #fff;
+    opacity: 0.7;
+    height: 500px
+}
+
+.styled-form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.styled-form input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid purple;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.styled-form input[type="radio"]:checked {
+    background-color: purple;
+}
+
+.styled-form input[type="radio"]:hover {
+    background-color: #f1e8f9;
+}
+
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #6c148f;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #d9d9d9;
+}
+
+td {
+    font-size: 18px;
+    text-align: center;
+}
+
+table td:first-child {
+    font-weight: bold;
+    color: #6c148f;
+    text-align: center;
+}
+
+table td:last-child {
+    text-align: right;
+    text-align: center;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #800080;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#how-to-play-desc {
+    text-align: center;
+    border-style: double;
+    background-color: blueviolet;
+    padding: 20px;
+    font-size: larger;
+    color: white;
+    text-shadow: 2px 2px #800080;
+    border-radius: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+}
